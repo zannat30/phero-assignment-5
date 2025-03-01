@@ -17,26 +17,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                
-              }
-            }
-          }
-        }
-      </script>
+    
     <style>
         .font-poppings{
             font-family: "Poppins", sans-serif;
         }
-        .color{
+        .text-color{
             color: #00303C;
         }
+        .button{
+            color: #3752FD;
+        }
+        
 
     </style>
       
@@ -44,18 +36,18 @@
 </head>
 
 <body class="font-poppings bg-blue-50">
-    <header class=" mx-36 border rounded-2xl bg-white ">
+    <header class=" mx-28 border-none rounded-2xl bg-white ">
         <nav class="flex items-center p-6 justify-between ">
             <section>
                 <div class="flex items-center gap-1.5">
                     <img src="assets/logo.png" class="" alt="">
-                    <h1 class="color">Dev<b>Board</b></h1>
+                    <h1 class="text-color">Dev<b>Board</b></h1>
                 </div>
 
             </section>
             
             <section class="flex gap-9">
-                <div  class="border rounded-xl bg-blue-50 p-3">
+                <div  class="border-none rounded-xl bg-blue-50 p-3">
                     <img src="assets/checkbox.png" class="">
     
                 </div>
@@ -68,8 +60,81 @@
         </nav>
 
     </header>
-    <main>
+    <main class="pl-32 pr-28 grid-cols-2 flex ">
+        <section >
+            <section class="flex items-center py-11 border-b-2 border-dashed border-stone-200">
+                <div class="flex gap-x-3 py-8 pr-4 pl-6 ">
+                    <div>
+                        <img src="assets/checkbox.png" class="rounded-full bg-white p-3 " alt="">
+                    </div>
+                        <div class="flex-col">
+                            <p class="text-base text-color">Task Assigned </p>
+                            <p class="text-3xl text-color"><b>05</b></p>
+        
+                        </div>
+                       
+                    </div>
+        
+                    <div class="flex items-center py-6 pr-20 pl-10 gap-3 border-none rounded-2xl bg-gradient-to-r from-indigo-600 from-0.419% via-indigo-400 via-52.66% to-indigo-300 to-99.733% ">
+                    <div>
+                        <img src="assets/board.png"  class="border-2 border-dashed border-stone-400" alt="">
+                    </div>
+                        <div>
+                            <p class="text-white">Discover Something<br>New Today!</p>
+                        
+                        </div>
+                       </div>
+        
+                       <div class="flex gap-3 py-8 pr-4 pl-6 ">
+                        <div>
+                            <img src="assets/calender.png" class="rounded-full bg-white p-3" alt="">
+                        </div>
+                            <div>
+                                <p class="text-xl text-color">Wed ,<br><b>Jul 28 2025</b> </p>
+            
+                            </div>
+                           
+                        </div>
+        
 
+            </section>
+          <section>
+            <div class="flex-col">
+                <div>
+                    <p>ShopEase</p>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                </div>
+                <div class="flex">
+                    <div class="flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+
+                    </div>
+                    <div>
+                        <button class="btn text-white  rounded-xl px-3 py-6">Completed</button>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+        </section>
+        <section class=""> 
+            <div class="flex flex-col w-80 bg-white border-none rounded-2xl p-8 ">
+            <div>
+                <img src="" alt="">
+                <p>Activity Log</p>
+
+            </div>
+            <div>
+                <button>Clear History</button>
+
+            </div>
+        </div>
+         </section> 
+       
     </main>
     <footer>
 
