@@ -25,30 +25,28 @@
         .text-color{
             color: #00303C;
         }
-        .text-color2{
-            color: #000000;
-        }
-      
+        
 
     </style>
       
       
 </head>
 
-<body class="font-poppings bg-blue-50">
+<body class="font-poppings bg-blue-50 pt-5 pb-10">
     <header class=" mx-24 border-none rounded-2xl bg-white ">
         <nav class="flex items-center p-6 justify-between ">
             <section>
                 <div class="flex items-center gap-1.5">
-                    <img src="assets/logo.png" class="" alt="">
-                    <h1 class="text-color">Dev<b>Board</b></h1>
+                    <img src="assets/logo.png" class="h-12" alt="">
+                    <h1 class="text-color text-3xl">Dev<b>Board</b></h1>
                 </div>
 
             </section>
             
             <section class="flex gap-9">
-                <div  class="border-none rounded-xl bg-blue-50 p-3">
-                    <img src="assets/checkbox.png" class="">
+                <div  class="border-none rounded-xl bg-blue-50 p-3 flex gap-2">
+                    <img src="assets/checkbox.png" class="h-8">
+                    <p class="text-2xl"><b>23</b></p>
     
                 </div>
                 <button>
@@ -60,22 +58,22 @@
         </nav>
 
     </header>
-    <main class="pl-28 pr-24 grid-cols-2 flex ">
-        <section >
-            <section class="flex items-center py-11 border-b-2 border-dashed border-stone-200">
-                <div class="flex gap-x-3 py-8 pr-4 pl-6 ">
+    <main class="pl-24 pr-24 grid-cols-2 flex mt-5 gap-5">
+        <section class="bg-white p-4 rounded-2xl">
+            <section class="flex gap-4 items-center pb-4 border-b-2 border-dashed border-stone-200">
+                <div class="flex gap-x-3 py-9 px-4 pl-6 bg-blue-50 rounded-lg">
                     <div>
                         <img src="assets/checkbox.png" class="rounded-full bg-white p-3 " alt="">
                     </div>
                         <div class="flex-col">
-                            <p class="text-base text-color">Task Assigned </p>
-                            <p class="text-3xl text-color"><b>05</b></p>
+                            <p class="text-sm text-color text-nowrap">Task Assigned </p>
+                            <p class="text-2xl text-color"><b>05</b></p>
         
                         </div>
                        
                     </div>
         
-                    <div class="flex items-center py-6 pr-20 pl-10 gap-3 border-none rounded-2xl bg-gradient-to-r from-indigo-600 from-0.419% via-indigo-400 via-52.66% to-indigo-300 to-99.733% ">
+                    <div class="flex items-center py-5 pr-18 pl-8 gap-3 border-none rounded-2xl bg-gradient-to-r from-[#3752FD] from-0.419% via-[#6C7FFA] via-52.66% to-[#9BA8F8] to-99.733% ">
                     <div>
                         <img src="assets/board.png"  class="border-2 border-dashed border-stone-400" alt="">
                     </div>
@@ -85,7 +83,7 @@
                         </div>
                        </div>
         
-                       <div class="flex gap-3 py-8 pr-4 pl-6 ">
+                       <div class="flex gap-x-3 py-8 px-6 bg-blue-50 rounded-lg ">
                         <div>
                             <img src="assets/calender.png" class="rounded-full bg-white p-3" alt="">
                         </div>
@@ -98,123 +96,118 @@
         
 
             </section>
-          <section class="grid grid-cols-3 grid-rows-2">
-            <div class="flex-col p-6 mt-4 ">
+          <section class="grid grid-cols-3 grid-rows-2 gap-4">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
+                    <p class="text-color  w-28 bg-white py-2 px-3 rounded-lg mb-4 text-sm">ShopEase</p>
                     <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
-          
-            <div class="flex-col p-6 mt-4 ">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
-                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-color  w-28 bg-white py-2 px-3 rounded-lg mb-4 text-sm">CloudSync</p>
+                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Add Dark Mode</h1>
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
-          
-            <div class="flex-col p-6 mt-4 ">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
-                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-color  w-24 bg-white py-2 px-3 rounded-lg mb-4 text-sm">SwiftPay</p>
+                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Optimize  Home page  </h1>
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
-          
-            <div class="flex-col p-6 mt-4 ">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
-                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-color  w-16 bg-white py-2 px-3 rounded-lg mb-4 text-sm">Meta</p>
+                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl"> Add new emoji 🤲</h1>
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
-          
-            <div class="flex-col p-6 mt-4 ">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
-                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-color  w-28 bg-white py-2 px-3 rounded-lg mb-4 text-nowrap text-sm">Google LLC</p>
+                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Integrate OpenAI API </h1>
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
-          
-            <div class="flex-col p-6 mt-4 ">
+            <div class="flex-col p-5 mt-4 bg-blue-50 rounded-2xl">
                 <div class=" border-b-2 border-dashed border-stone-200">
-                    <p class="text-color  w-28 bg-white py-2 px-4 rounded-lg mb-4">ShopEase</p>
-                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Fix Mobile Button Issue </h1>
-                    <p class="text-slate-400 bg-white rounded-lg p-3  mb-4 ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
+                    <p class="text-color  w-28 bg-white py-2 px-3 rounded-lg mb-4 text-sm">Glassdoar</p>
+                    <h1 class="text-color mb-4 text-nowrap font-medium text-xl">Improve Job searching  </h1>
+                    <p class="text-slate-400 bg-white rounded-lg p-2  mb-4 text-xs ">Debug using Chrome DevTools,check for overlapping elements,and ensure onClick works properly
                         and ensure onClick works properly</p>
 
                 </div>
-                <div class="flex gap-x-6 my-4">
+                <div class="flex gap-x-4 my-4">
                     <div class="flex-col">
-                        <p class="text-color">Deadline</p>
-                        <p class="text-nowrap text-color font-medium">21 March 2025</p>
+                        <p class="text-color text-sm">Deadline</p>
+                        <p class="text-nowrap text-color font-medium text-sm">21 March 2025</p>
 
                     </div>
                     <div>
-                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2">Completed</button>
+                        <button class="btn text-white bg-[#3752FD]  rounded-xl px-4 py-2 text-xs">Completed</button>
                     </div>
                 </div>
             </div>
@@ -222,15 +215,15 @@
           </section>
 
         </section>
-        <section class=""> 
-            <div class="flex flex-col w-72 bg-white border-none rounded-2xl p-8 ">
-            <div>
-                <img src="" alt="">
+        <section class="grid grid-rows-1"> 
+            <div class="flex flex-col p-4 items-center gap-3  w-72 bg-white border-none rounded-2xl ">
+            <div class="flex gap-2">
+                <img src="assets/activity.png" alt="">
                 <p>Activity Log</p>
 
             </div>
             <div>
-                <button>Clear History</button>
+                <button class="btn text-white bg-[#3752FD]  rounded-lg px-4 py-2 text-xs">Clear History</button>
 
             </div>
         </div>
