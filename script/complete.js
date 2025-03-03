@@ -1,27 +1,22 @@
-
- let checkbox =23;
- let task = 5;
-
- const completeButton = document.querySelector('#complete-btn');
-     completeButton.addEventListener("click",
-     function(event){
-         event.preventDefault();
-         alert("Board updated sucessfully");
-
-     
-         checkbox++;
-         task--;
-         document.getElementById("checkbox").innerText = checkbox;
-        document.getElementById("task-assigned").innerText = task;
-
-        completeButton.disabled =true;
-
-
-        let activityLog = document.getElementById("activity-log");
-        let notification = document.createElement('div');
-        notification.innerText = `You have completed the task ${heading-text}`;
-        activityLog.appendChild(notification);
+// Function to handle task completed count
+document.addEventListener('DOMContentLoaded', function() {
+    const taskCompletedCounterElement = document.getElementById('task-completed-counter');
+    const taskCompletedButtons = document.querySelectorAll('.task-completed-btn');
+    
+    // Initial count from the HTML
+    let taskCompletedCount = parseInt(taskCompletedCounterElement.textContent);
+    
+    // Function to update the task completed count
+    function updateTaskCompletedCount() {
+        taskCompletedCount++;
+        taskCompletedCounterElement.textContent = taskCompletedCount;
+        
+        // Alert for board update
+        alert('Board Updated Successfully');
     }
- )
-
-
+    
+    // Add event listeners to all task completed buttons
+    taskCompletedButtons.forEach(button => {
+        button.addEventListener('click', updateTaskCompletedCount);
+    });
+});
